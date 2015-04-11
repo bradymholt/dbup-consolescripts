@@ -12,6 +12,6 @@
     <description>$description$</description>
     <releaseNotes>$notes$</releaseNotes>
     <copyright>$copyright$</copyright>
-    <tags></tags>
+    <tags>dbup database migrations scripts console</tags>   
   </metadata>
 </package>
