@@ -23,7 +23,7 @@ task :package, [:version_number, :notes] do |t, args|
 	data = http.get(uri.request_uri)
 	open("nuget.exe", "wb") { |file| file.write(data.body) }
 	desc "create the nuget package"
-	sh "nuget.exe pack build\\#{project_name}.nuspec -Properties \"id=#{project_id};version=#{args.version_number};title=#{project_title};owner=#{project_owner};authors=#{project_authors};description=#{project_description};notes=v#{args.version_number} - #{args.notes};copyright=#{project_copyright}\""
+	sh "nuget.exe pack build\\#{project_id}.nuspec -Properties \"id=#{project_id};version=#{args.version_number};title=#{project_title};owner=#{project_owner};authors=#{project_authors};description=#{project_description};notes=v#{args.version_number} - #{args.notes};copyright=#{project_copyright}\""
 end
 
 task :push, [:version_number, :notes] do |t, args|

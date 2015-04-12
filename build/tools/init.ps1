@@ -1,3 +1,3 @@
 ﻿param($installPath, $toolsPath, $package, $project)
 
-Import-Module (Join-Path $toolsPath DbUp.ConsoleScripts.psm1)
+Import-Module (Join-Path $toolsPath dbup-consolescripts.psm1)

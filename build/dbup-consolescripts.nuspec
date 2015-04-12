@@ -7,7 +7,7 @@
     <authors>$authors$</authors>
     <owners>$owner$</owners>
     <licenseUrl>https://raw.github.com/bradyholt/DbUp.ConsoleScripts/master/LICENSE</licenseUrl>
-    <projectUrl>https://github.com/bradyholt/DbUp.ConsoleScripts</projectUrl>
+    <projectUrl>https://github.com/bradyholt/dbup-consolescripts</projectUrl>
     <iconUrl>https://raw.github.com/DbUp/DbUp/master/src/Information/dbup-icon.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>$description$</description>
