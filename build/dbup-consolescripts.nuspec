@@ -3,14 +3,14 @@
   <metadata>
     <id>$id$</id>
     <version>$version$</version>
-    <title>$title$</title>
-    <authors>$authors$</authors>
-    <owners>$owner$</owners>
+    <title>DbUp Package Manager Console Scripts</title>
+    <authors>Brady Holt</authors>
+    <owners>Brady Holt</owners>
     <licenseUrl>https://raw.github.com/bradyholt/DbUp.ConsoleScripts/master/LICENSE</licenseUrl>
     <projectUrl>https://github.com/bradyholt/dbup-consolescripts</projectUrl>
     <iconUrl>https://raw.github.com/DbUp/DbUp/master/src/Information/dbup-icon.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>$description$</description>
+    <description>Package Manager Console scripts for DbUp</description>
     <releaseNotes>$notes$</releaseNotes>
     <copyright>$copyright$</copyright>
     <tags>dbup database migrations scripts console</tags>   
