@@ -6,6 +6,7 @@ require 'date'
 require 'net/http'
 require 'openssl'
 
+project_id = "dbup-consolescripts"
 project_name = "DbUp.ConsoleScripts"
 project_title = "DbUp Package Manager Console Scripts"
 project_owner = "Brady Holt"
@@ -22,11 +23,11 @@ task :package, [:version_number, :notes] do |t, args|
 	data = http.get(uri.request_uri)
 	open("nuget.exe", "wb") { |file| file.write(data.body) }
 	desc "create the nuget package"
-	sh "nuget.exe pack build\\#{project_name}.nuspec -Properties \"version=#{args.version_number};title=#{project_title};owner=#{project_owner};authors=#{project_authors};description=#{project_description};notes=v#{args.version_number} - #{args.notes};copyright=#{project_copyright}\""
+	sh "nuget.exe pack build\\#{project_name}.nuspec -Properties \"id=#{project_id};version=#{args.version_number};title=#{project_title};owner=#{project_owner};authors=#{project_authors};description=#{project_description};notes=v#{args.version_number} - #{args.notes};copyright=#{project_copyright}\""
 end
 
 task :push, [:version_number, :notes] do |t, args|
-	sh "nuget.exe push #{project_name}.#{args.version_number}.nupkg"
+	sh "nuget.exe push #{project_id}.#{args.version_number}.nupkg"
 end
 
 task :tag, [:version_number, :notes] do |t, args|
