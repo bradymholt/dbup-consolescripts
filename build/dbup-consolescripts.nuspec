@@ -10,7 +10,7 @@
     <projectUrl>https://github.com/bradyholt/dbup-consolescripts</projectUrl>
     <iconUrl>https://raw.github.com/DbUp/DbUp/master/src/Information/dbup-icon.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>Package Manager Console scripts for DbUp.  New-Migration [Name] and Start-Migrations commands help to make the DbUp process flow smoothly through the PCM.</description>
+    <description>Package Manager Console scripts for DbUp.  New-Migration [Name] and Start-Migrations commands help to make creating and running DbUp migrations easy.</description>
     <releaseNotes>$notes$</releaseNotes>
     <copyright>$copyright$</copyright>
     <tags>dbup database migrations scripts console</tags>   
