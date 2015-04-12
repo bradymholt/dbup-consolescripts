@@ -6,7 +6,7 @@
     <title>DbUp Package Manager Console Scripts</title>
     <authors>Brady Holt</authors>
     <owners>Brady Holt</owners>
-    <licenseUrl>https://raw.github.com/bradyholt/DbUp.ConsoleScripts/master/LICENSE</licenseUrl>
+    <licenseUrl>https://raw.github.com/bradyholt/dbup-consolescripts/master/LICENSE</licenseUrl>
     <projectUrl>https://github.com/bradyholt/dbup-consolescripts</projectUrl>
     <iconUrl>https://raw.github.com/DbUp/DbUp/master/src/Information/dbup-icon.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
