@@ -1,13 +1,14 @@
 <?xml version="1.0"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
-    <id>DbUp.ConsoleScripts</id>
+    <id>dbup-consolescripts</id>
     <version>$version$</version>
     <title>$title$</title>
     <authors>$authors$</authors>
     <owners>$owner$</owners>
     <licenseUrl>https://raw.github.com/bradyholt/DbUp.ConsoleScripts/master/LICENSE</licenseUrl>
     <projectUrl>http://bradyholt.github.io/DbUp.ConsoleScripts/</projectUrl>
+    <iconUrl>https://raw.github.com/DbUp/DbUp/master/src/Information/dbup-icon.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>$description$</description>
     <releaseNotes>$notes$</releaseNotes>
