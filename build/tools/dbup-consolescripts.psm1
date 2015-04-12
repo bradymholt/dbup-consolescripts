@@ -49,7 +49,7 @@ function Start-Migrations {
   $dte.Solution.SolutionBuild.BuildProject("Debug", $project.FullName, $true)
   $projectDirectory = Split-Path $project.FullName
     
-    $args = " --scriptDefinitions"
+    $args = " --fromconsole"
 
     if ($Whatif.IsPresent){
         $args = $args + " --whatif"
