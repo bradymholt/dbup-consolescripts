@@ -1,5 +1,5 @@
 # DbUp Package Manager Console Scripts
-Package Manager Console scripts for [DbUp](http://dbup.github.io/).
+Package Manager Console scripts for [DbUp](http://dbup.github.io/).  Distributed as a NuGet package.
 
 ## Install
     Install-Package dbup-consolescripts
