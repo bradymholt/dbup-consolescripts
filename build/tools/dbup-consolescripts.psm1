@@ -58,13 +58,3 @@ function Start-Migrations {
   $projectExe = $projectDirectory + "\bin\Debug\" + $project.Name + ".exe" + $args
   iex $projectExe
  }
-
- function Start-DatabaseScriptAll {
-  $project = Get-Project
-  Write-Host "Building..."
-  $dte.Solution.SolutionBuild.BuildProject("Debug", $project.FullName, $true)
-  $projectDirectory = Split-Path $project.FullName
-  $projectExe = $projectDirectory + "\bin\Debug\" + $project.Name + ".exe" + " --scriptAllDefinitions"
-  Write-Host "Scripting..."
-  iex $projectExe
- }
