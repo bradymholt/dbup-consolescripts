@@ -26,7 +26,7 @@ task :package, [:version_number, :notes] do |t, args|
 end
 
 task :push, [:version_number, :notes] do |t, args|
-	sh "nuget.exe push build\\#{project_name}.#{args.version_number}.nupkg"
+	sh "nuget.exe push #{project_name}.#{args.version_number}.nupkg"
 end
 
 task :tag, [:version_number, :notes] do |t, args|
