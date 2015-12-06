@@ -14,4 +14,9 @@ Although dbup-consolescripts does not have a dependency on the [dbup](https://ww
 
 When this package is installed, the above commands can be run from the Package Manager Console.  **Note: make sure the "Default project" selected in the Package Manager Console is your DbUp project** before running these commands.
 
+## Development
+
+### Release Process
+1. Download latest version of [nuget.exe](https://docs.nuget.org/consume/installing-nuget) to \tools folder.
+2. From root project folder, run `rake release[1.2.0,"Release notes here..."]`.
 
