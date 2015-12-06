@@ -55,6 +55,6 @@ function Start-Migrations {
         $args = $args + " --whatif"
     }
 
-  $projectExe = $projectDirectory + "\bin\Debug\" + $project.Name + ".exe" + $args
-  iex $projectExe
+  $projectExe = $projectDirectory + "\bin\Debug\" + $project.Name + ".exe"
+  & $projectExe $args
  }
