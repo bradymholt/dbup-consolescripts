@@ -37,6 +37,7 @@ function New-Migration {
    $item = $targetProjectItem.ProjectItems.Item($fileName) 
    $item.Properties.Item("BuildAction").Value = [int]3 #Embedded Resource
    Write-Host "Created new migration: ${fileName}"
+   $dte.ExecuteCommand("File.OpenFile", $filePath)
 }
 
 function Start-Migrations {
