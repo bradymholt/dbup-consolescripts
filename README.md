@@ -18,5 +18,5 @@ When this package is installed, the above commands can be run from the Package M
 
 ### Release Process
 1. Download latest version of [nuget.exe](https://docs.nuget.org/consume/installing-nuget) to \tools folder.
-2. From root project folder, run `rake release[1.2.0,"Release notes here..."]`.
+2. From root project folder, run `rake "release[1.2.0,Release notes here...]"`.
 
