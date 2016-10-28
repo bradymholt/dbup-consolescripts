@@ -15,7 +15,7 @@ task :package, [:version_number, :notes] do |t, args|
 end
 
 task :push, [:version_number, :notes] do |t, args|
-	sh "tools\\nuget.exe push #{project_id}.#{args.version_number}.nupkg"
+	sh "tools\\nuget.exe push #{project_id}.#{args.version_number}.nupkg -Source https://www.nuget.org/api/v2/package"
 end
 
 task :tag, [:version_number, :notes] do |t, args|
