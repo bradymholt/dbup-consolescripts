@@ -46,8 +46,10 @@ function Start-Migrations {
   )
 
   $project = Get-Project
+  $outputPath = $project.ConfigurationManager.ActiveConfiguration.Properties["OutputPath"].Value
+  $activeConfiguration = $dte.Solution.SolutionBuild.ActiveConfiguration.Name  
   Write-Host "Building..."
-  $dte.Solution.SolutionBuild.BuildProject("Debug", $project.FullName, $true)
+  $dte.Solution.SolutionBuild.BuildProject($activeConfiguration, $project.FullName, $true)
   $projectDirectory = Split-Path $project.FullName
     
     $args = " --fromconsole"
@@ -56,6 +58,6 @@ function Start-Migrations {
         $args = $args + " --whatif"
     }
 
-  $projectExe = $projectDirectory + "\bin\Debug\" + $project.Name + ".exe"
+  $projectExe = $projectDirectory + "\" + $outputPath + $project.Name + ".exe"
   & $projectExe $args
  }
