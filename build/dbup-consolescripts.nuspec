@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+<package>
   <metadata>
     <id>$id$</id>
     <version>$version$</version>
@@ -13,6 +13,6 @@
     <description>Package Manager Console scripts for DbUp.  New-Migration [Name] and Start-Migrations commands help to make creating and running DbUp migrations easy.</description>
     <releaseNotes>$notes$</releaseNotes>
     <copyright>$copyright$</copyright>
-    <tags>dbup database migrations scripts console</tags>   
+    <tags>dbup database migrations scripts console</tags>
   </metadata>
 </package>

@@ -11,11 +11,11 @@ project_copyright = "Copyright #{DateTime.now.strftime('%Y')}"
 
 task :package, [:version_number, :notes] do |t, args|
 	desc "create the nuget package"
-	sh "tools\\nuget.exe pack build\\#{project_id}.nuspec -Properties \"id=#{project_id};version=#{args.version_number};notes=v#{args.version_number} - #{args.notes};copyright=#{project_copyright}\""
+	sh "mono tools/nuget.exe pack build/#{project_id}.nuspec -Properties \"id=#{project_id};version=#{args.version_number};notes=v#{args.version_number} - #{args.notes};copyright=#{project_copyright}\""
 end
 
 task :push, [:version_number, :notes] do |t, args|
-	sh "tools\\nuget.exe push #{project_id}.#{args.version_number}.nupkg -Source https://www.nuget.org/api/v2/package"
+	sh "mono tools/nuget.exe push #{project_id}.#{args.version_number}.nupkg -Source https://www.nuget.org/api/v2/package"
 end
 
 task :tag, [:version_number, :notes] do |t, args|
