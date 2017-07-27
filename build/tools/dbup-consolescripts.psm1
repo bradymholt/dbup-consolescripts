@@ -2,7 +2,8 @@
 
 function New-Migration {
   param (
-    [string] $Name
+    [string] $Name,
+    [string] $Encoding = ""
   )
 
    $project = Get-Project
@@ -32,7 +33,15 @@ function New-Migration {
    $fileName = $fileNameBase + ".sql"
    $filePath = $scriptDirectory + "\" + $fileName
 
-   New-Item -path $scriptDirectory -name $fileName -type "file" -value "/* Migration Script */" | Out-Null
+   New-Item -path $scriptDirectory -name $fileName -type "file" | Out-Null
+   try
+   {
+      "/* Migration Script */" | Out-File -Encoding $Encoding -FilePath $filePath
+   }
+   catch
+   {
+      "/* Migration Script */" | Out-File -Encoding ascii -FilePath $filePath
+   }
    $targetProjectItem.ProjectItems.AddFromFile($filePath) | Out-Null
    $item = $targetProjectItem.ProjectItems.Item($fileName) 
    $item.Properties.Item("BuildAction").Value = [int]3 #Embedded Resource
