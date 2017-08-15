@@ -55,7 +55,7 @@ function Start-Migrations {
   )
 
   $project = Get-Project
-  $outputPath = $project.ConfigurationManager.ActiveConfiguration.Properties["OutputPath"].Value
+  $outputPath = $project.ConfigurationManager.ActiveConfiguration.Properties.Item("OutputPath").Value
   $activeConfiguration = $dte.Solution.SolutionBuild.ActiveConfiguration.Name  
   Write-Host "Building..."
   $dte.Solution.SolutionBuild.BuildProject($activeConfiguration, $project.FullName, $true)
