@@ -15,4 +15,8 @@
     <copyright>$copyright$</copyright>
     <tags>dbup database migrations scripts console</tags>
   </metadata>
+  <files>
+    <file src="dbup-consolescripts.psm1" target="tools/dbup-consolescripts.psm1" />
+    <file src="init.ps1" target="tools/init.ps1" />
+  </files>
 </package>

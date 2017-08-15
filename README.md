@@ -19,7 +19,8 @@ When this package is installed, the above commands can be run from the Package M
 ### Release Process
 1. Install the latest version of Mono.
 2. Ensure Ruby and RubyGems is installed
-3. From root project folder, run:
+3. Ensure NUGET_API_KEY environment variable is set
+4. From root project folder, run:
  -  `bundle install`
  -  `rake "release[1.2.0,Release notes here...]"`.
 
