@@ -1,4 +1,7 @@
 # DbUp Package Manager Console Scripts
+
+[![NuGet version](https://badge.fury.io/nu/dbup-consolescripts.svg)](https://badge.fury.io/nu/dbup-consolescripts)
+
 Package Manager Console scripts for [DbUp](http://dbup.github.io/).
 
 ## Install
