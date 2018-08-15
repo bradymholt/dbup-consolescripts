@@ -48,8 +48,14 @@ function Start-Migrations {
         $args = $args + " --whatif"
     }
 
-  $projectExe = $projectDirectory + "\" + $outputPath + $outputAssemblyName + ".exe"
-  & $projectExe $args
+  If($outputPath.IndexOf("netcoreapp") -ge 0) {
+	$projectCmd = $projectDirectory + "\" + $outputPath + $outputAssemblyName + ".dll"
+	dotnet $projectCmd $args
+  }
+  Else {
+    $projectExe = $projectDirectory + "\" + $outputPath + $outputAssemblyName + ".exe"
+    & $projectExe $args
+  }
 }
  
 
